@@ -1,0 +1,6 @@
+<button (click)="start()">Start</button>
+<button (click)="next()">Next</button>
+
+<div>Current Pokemon name: {{ (pokemon$ | async).pokemon.name }}</div>
+<img [src]="(pokemon$ | async).pokemon.sprites.front_default"/>
+

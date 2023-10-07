@@ -1,0 +1,9 @@
+<button (click)="increment()">Increment</button>
+
+<div>Current Score home: {{ (score$ | async).home }}</div>
+<div>Current Score away: {{ (score$ | async).away }}</div>
+
+<button (click)="decrement()">Decrement</button>
+
+<button (click)="reset()">Reset Counter</button>
+<button (click)="setScores()">Set Counter</button>
